@@ -168,7 +168,7 @@
 //
 //	for (int x = -100000; x < 100000; x++) {
 //		xfl = x * 0.0001;
-//		printf("%f <> %f <> %f\n", round((a1 * pow(xfl, 2) + b1 * xfl + c1) * 100) / 100, round((a2 * xfl + b2) * 100) / 100, xfl);///
+//		//printf("%f <> %f <> %f\n", round((a1 * pow(xfl, 2) + b1 * xfl + c1) * 100) / 100, round((a2 * xfl + b2) * 100) / 100, xfl);///
 //		if (round((a1 * pow(xfl,2) + b1 * xfl + c1) * 100) / 100 == round((a2 * xfl + b2) * 100) / 100){
 //			condition = true;
 //			break;
