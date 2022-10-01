@@ -1,4 +1,4 @@
-﻿//--------------------------------------------------------------------------------------№1
+//--------------------------------------------------------------------------------------№1
 //
 //#include <stdio.h>
 //
@@ -180,5 +180,77 @@
 //	}
 //	else {
 //		printf("no\n");
+//	}
+//}
+// 
+// 
+// 
+//--------------------------------------------------------------------------------------№7
+//
+//#include <stdio.h>
+//
+//int main() {
+//
+//	int a, n, A = 1;
+//	scanf_s("%d", &a); scanf_s("%d", &n);
+//
+//	for (int i = 1; i < n+1; i++) {
+//		A *= a;
+//		if (A < 0) {
+//			printf("error.event_: DATA_OVERFLOW\n"); return 0;
+//		}
+//	}
+//	printf("%d", A);
+//}
+// 
+// 
+// 
+//--------------------------------------------------------------------------------------№8
+//
+//#include <stdio.h>
+//using namespace std;
+//
+//int main() {
+//    int a, b;
+//    scanf_s("%d", &a); scanf_s("%d", &b);
+//    int maximum = (a > b) ? a : b, minimum = (a < b) ? a : b;
+//
+//    while ((maximum > 0) and (minimum > 0))
+//    {
+//        maximum %= minimum; a = maximum; b = minimum;
+//        maximum = (a > b) ? a : b;
+//        minimum = (a < b) ? a : b;
+//    }
+//    printf("%d", maximum);
+//}
+//
+//
+//
+//--------------------------------------------------------------------------------------№9
+//
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main() {
+//
+//	int m, num, count = 0, condition;
+//	scanf_s("%d", &m); printf("List of %d prime numbers: \n\n", m);
+//
+//	for (num = 2; num <= 1000000000; num++) {
+//		condition = 1;
+//		for (int i = 2; i <= sqrt(num); i++) {
+//			if (num % i == 0) {
+//				condition = 0;
+//			}
+//		}
+//
+//		if (condition == 1) {
+//			printf("%d)  %d\n\n", count+1, num);
+//			count++;
+//		}
+//
+//		if (count == m) {
+//			return 0;
+//		}
 //	}
 //}
