@@ -1,17 +1,27 @@
-﻿// --- --- --- #1
+// --- --- --- #1
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], max_el = 0, min_el = 999; 
 //
-//	for (int i = 0; i < 10; i++) {
-//		scanf_s("%d", &arr[i]);
+//	srand(time(NULL));
+//	int max_el = 0, min_el = 999, k; int* arr;
+//
+//	scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
+//
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % 10;
+//		printf("%d  ", arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
-//		if (arr[i] % 2 == 0) {
+//	printf("\n");
+//
+//	for (int i = 0; i < k; i++) {
+//		if (arr[i] % 2 != 0) {
 //			max_el = (arr[i] > max_el) ? arr[i] : max_el;
 //		}
 //		else {
@@ -27,15 +37,27 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], negative_sum = 0;
 //
-//	for (int i = 0; i < 10; i++) {
-//		scanf_s("%d", &arr[i]);
+//	srand(time(NULL));
+//
+//	int k, negative_sum = 0;
+//	int* arr;
+//
+//	scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
+//
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % 10 - 10 * (rand() % 2);
+//		printf("%d  ", arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	printf("\n");
+//
+//	for (int i = 0; i < k; i++) {
 //		if (arr[i] < 0) {
 //			negative_sum += arr[i];
 //		}
@@ -49,16 +71,22 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], prod = 1;
+//	int k, prod = 1;
+//	int* arr;
+//
+//	srand(time(NULL)); scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
 //	
-//	for (int i = 0; i < 10; i++) {
-//		printf("%d) ", i);
-//		scanf_s("%d", &arr[i]);
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % 10;
+//		printf("%d) %d\n", i, arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	for (int i = 0; i < k; i++) {
 //		if ((i % 2) != 0) {
 //			prod *= arr[i];
 //		}
@@ -72,16 +100,25 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
+//
 //
 //int main() {
-//	int arr[10], nul_index1 = 11, nul_index2 = 11, sum = 0;
+//	int k, nul_index1 = 11, nul_index2 = 11, sum = 0;
+//	int* arr;
+//
+//	srand(time(NULL)); scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
 //	
-//	for (int i = 0; i < 10; i++) {
-//		printf("%d) ", i);
-//		scanf_s("%d", &arr[i]);
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % 11;
+//		printf("%d) %d\n", i, arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	printf("\n");
+//
+//	for (int i = 0; i < k; i++) {
 //		if (arr[i] == 0) {
 //			if (nul_index1 == 11) { nul_index1 = i; }
 //
@@ -106,16 +143,22 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], max_value = 0, min_value = 1000;
+//	int k, max_value = 0, min_value = 1000;
+//	int* arr;
+//
+//	srand(time(NULL)); scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
 //	
-//	for (int i = 0; i < 10; i++) {
-//		printf("%d) ", i);
-//		scanf_s("%d", &arr[i]);
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % (k + 1);
+//		printf("%d) %d\n", i, arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	for (int i = 0; i < k; i++) {
 //		max_value = (arr[i] > max_value) ? arr[i] : max_value;
 //
 //		min_value = (arr[i] < min_value) ? arr[i] : min_value;
@@ -129,16 +172,22 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], min_value = 1000;
+//	int k, min_value = 1000;
+//	int* arr;
 //
-//	for (int i = 0; i < 10; i++) {
-//		printf("%d) ", i);
-//		scanf_s("%d", &arr[i]);
+//	srand(time(NULL)); scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
+//
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = rand() % (k + 1);
+//		printf("%d) %d\n", i, arr[i]);
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	for (int i = 0; i < k; i++) {
 //		if (arr[i] < 0) { arr[i] = -arr[i]; }
 //		min_value = (arr[i] < min_value) ? arr[i] : min_value;
 //	}
@@ -151,22 +200,29 @@
 
 
 //#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
 //
 //int main() {
-//	int arr[10], arr2[10], count = 0;
+//	int k, count = 0;
+//	int* arr; int* arr2;
 //
-//	for (int i = 0; i < 10; i++) {
-//		printf("%d) ", i);
-//		scanf_s("%d", &arr[i]);
+//	srand(time(NULL)); scanf_s("%d", &k);
+//	arr = (int*)malloc(sizeof(int) * k);
+//	arr2 = (int*)malloc(sizeof(int) * k);
+//
+//	for (int i = 0; i < k; i++) {
+//		arr[i] = arr2[i] = rand() % (k + 1) - k * (rand() % 2);
+//		printf("%d) %d\n", i, arr[i]);
 //	}
 //
 //	printf("\nResult is:\n");
 //
-//	for (int i = 0; i < 10; i++) {
+//	for (int i = 0; i < k; i++) {
 //		if (arr[i] == 0) { arr2[count] = 0; printf("%d  ", arr2[count]); count++; }
 //	}
 //
-//	for (int i = 0; i < 10; i++) {
+//	for (int i = 0; i < k; i++) {
 //		if (arr[i] != 0) { arr2[count] = arr[i]; printf("%d  ", arr2[count]); count++; }
 //	}
 //}
