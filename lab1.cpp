@@ -136,7 +136,7 @@
 //		return 0;
 //	}
 //	if (discr > 0) {
-//		x1 = (-b + pow(discr, 0.5)) / (2 * a); x2 = (-b - discr) / (2 * a);
+//		x1 = (-b + pow(discr, 0.5)) / (2 * a); x2 = (-b - pow(discr, 0.5)) / (2 * a);
 //		printf("two solutions: %f and %f\n", x1, x2); /// 1 5 6
 //		return 0;
 //	}
